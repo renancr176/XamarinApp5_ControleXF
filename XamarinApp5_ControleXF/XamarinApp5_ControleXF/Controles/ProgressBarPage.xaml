@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp5_ControleXF.Controles.ProgressBarPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <ProgressBar x:Name="Barra1"
+                         BackgroundColor="#C0C0C0"
+                         ProgressColor="SlateBlue"></ProgressBar>
+
+            <ProgressBar x:Name="Barra2"
+                         BackgroundColor="#C0C0C0"
+                         ProgressColor="DarkMagenta"></ProgressBar>
+
+            <Button Text="Elevar Progresso"
+                    Clicked="ElevarProgresso"
+                    HorizontalOptions="CenterAndExpand"
+                    BackgroundColor="#0D1F2D"
+                    TextColor="White"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
