@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp5_ControleXF.Controles.TimePickerPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <TimePicker x:Name="TimePicker1" 
+                        TextColor="SlateBlue"
+                        Format="HH:mm"
+                        ></TimePicker>
+
+            <Button Text="Verificar"
+                    TextColor="White"
+                    BackgroundColor="#0D1F2D"
+                    Clicked="Button_OnClicked"
+                    HorizontalOptions="CenterAndExpand"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

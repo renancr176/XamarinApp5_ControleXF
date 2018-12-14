@@ -98,5 +98,15 @@ namespace XamarinApp5_ControleXF
             };
             IsPresented = false;
         }
+
+        private void GoToTimePicker(object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new TimePickerPage())
+            {
+                BarBackgroundColor = Color.FromHex("#0D1F2D"),
+                BarTextColor = Color.White
+            };
+            IsPresented = false;
+        }
     }
 }
