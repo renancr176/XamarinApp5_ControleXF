@@ -88,6 +88,15 @@ namespace XamarinApp5_ControleXF
             };
             IsPresented = false;
         }
-        
+
+        private void GoToDatePicker(object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new DatePickerPage())
+            {
+                BarBackgroundColor = Color.FromHex("#0D1F2D"),
+                BarTextColor = Color.White
+            };
+            IsPresented = false;
+        }
     }
 }

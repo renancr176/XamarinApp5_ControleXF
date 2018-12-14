@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp5_ControleXF.Controles.DatePickerPage"
+             Title="Date Picker">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <DatePicker x:Name="DatePicker1"
+                        TextColor="SlateBlue"
+                        Format="dd/MM/yyyyy"
+                        MinimumDate="01/01/2000"
+                        DateSelected="DatePicker1_OnDateSelected"
+                        
+                        HorizontalOptions="CenterAndExpand"></DatePicker>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="New Date"
+                       FontAttributes="Bold"
+                       WidthRequest="100"
+                       HorizontalTextAlignment="End"></Label>
+                <Label x:Name="LblNewDate"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Old Date"
+                       FontAttributes="Bold"
+                       WidthRequest="100"
+                       HorizontalTextAlignment="End"></Label>
+                <Label x:Name="LblOldDate"></Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

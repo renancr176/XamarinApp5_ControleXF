@@ -54,6 +54,11 @@
                                 BackgroundColor="Transparent"
                                 BorderColor="Transparent"
                                 Clicked="GoToEntryOrEditor"></Button>
+                        <Button Text="Date Picker"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="Transparent"
+                                Clicked="GoToDatePicker"></Button>
                     </StackLayout>
                 </ScrollView>
             </StackLayout>
