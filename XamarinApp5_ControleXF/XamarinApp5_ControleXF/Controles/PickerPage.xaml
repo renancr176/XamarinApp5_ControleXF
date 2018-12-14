@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp5_ControleXF.Controles.PickerPage"
+             Title="Picker">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Picker HorizontalOptions="CenterAndExpand"></Picker>
+
+            <Picker BackgroundColor="SlateBlue"
+                    HorizontalOptions="CenterAndExpand"></Picker>
+
+            <Picker HorizontalOptions="CenterAndExpand">
+                <Picker.BackgroundColor>SlateBlue</Picker.BackgroundColor>
+            </Picker>
+
+            <Picker SelectedIndexChanged="Picker_OnSelectedIndexChanged"
+                    HorizontalOptions="CenterAndExpand">
+                <Picker.Items>
+                    <x:String>Sim</x:String>
+                    <x:String>Não</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Picker x:Name="Picker1"
+                    SelectedIndexChanged="Picker_OnSelectedIndexChanged"
+                    HorizontalOptions="CenterAndExpand"></Picker>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

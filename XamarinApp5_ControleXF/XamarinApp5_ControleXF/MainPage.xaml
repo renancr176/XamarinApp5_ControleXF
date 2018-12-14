@@ -64,6 +64,11 @@
                                 BackgroundColor="Transparent"
                                 BorderColor="Transparent"
                                 Clicked="GoToTimePicker"></Button>
+                        <Button Text="Picker"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="Transparent"
+                                Clicked="GoToPicker"></Button>
                     </StackLayout>
                 </ScrollView>
             </StackLayout>
