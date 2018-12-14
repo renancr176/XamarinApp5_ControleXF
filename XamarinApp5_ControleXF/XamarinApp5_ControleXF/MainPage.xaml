@@ -79,6 +79,11 @@
                                 BackgroundColor="Transparent"
                                 BorderColor="Transparent"
                                 Clicked="GoToSliderOrStepper"></Button>
+                        <Button Text="Switch"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="Transparent"
+                                Clicked="GoToSwitch"></Button>
                     </StackLayout>
                 </ScrollView>
             </StackLayout>
