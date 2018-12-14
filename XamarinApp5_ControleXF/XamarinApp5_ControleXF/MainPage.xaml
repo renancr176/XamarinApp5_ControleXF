@@ -74,6 +74,11 @@
                                 BackgroundColor="Transparent"
                                 BorderColor="Transparent"
                                 Clicked="GoToSearchBar"></Button>
+                        <Button Text="Slider ou Stepper"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="Transparent"
+                                Clicked="GoToSliderOrStepper"></Button>
                     </StackLayout>
                 </ScrollView>
             </StackLayout>

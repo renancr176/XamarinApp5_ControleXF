@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp5_ControleXF.Controles.SliderOrStepper"
+             Title="Slider ou Stepper">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="CenterAndExpand"
+                         Padding="10">
+                <Label Text="Slider"
+                       TextColor="White"
+                       BackgroundColor="#0D1F2D"
+                       FontSize="Large"
+                       HorizontalOptions="CenterAndExpand" />
+
+                <Slider Minimum="0"
+                        Maximum="100"
+                        Value="50"
+                        ValueChanged="Slider_OnValueChanged"
+                        ThumbColor="SlateBlue"
+                        MaximumTrackColor="Aqua"
+                        MinimumTrackColor="#0D1F2D"
+                        HorizontalOptions="FillAndExpand"></Slider>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="New slider value"
+                           FontAttributes="Bold"
+                           WidthRequest="120"
+                           HorizontalTextAlignment="End"></Label>
+                    <Label x:Name="LblSliderNewVal"></Label>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Old slider value"
+                           FontAttributes="Bold"
+                           WidthRequest="120"
+                           HorizontalTextAlignment="End"></Label>
+                    <Label x:Name="LblSliderOldVal"></Label>
+                </StackLayout>
+
+                <Label Text="Stepper"
+                       TextColor="White"
+                       BackgroundColor="#0D1F2D"
+                       FontSize="Large"
+                       HorizontalOptions="CenterAndExpand" />
+
+                <Stepper Minimum="0"
+                         Maximum="100"
+                         Value="50"
+                         ValueChanged="Stepper_OnValueChanged"
+                         BackgroundColor="SlateBlue"
+                         HorizontalOptions="CenterAndExpand"></Stepper>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="New slider value"
+                           FontAttributes="Bold"
+                           WidthRequest="120"
+                           HorizontalTextAlignment="End"></Label>
+                    <Label x:Name="LblStepperNewVal"></Label>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Old slider value"
+                           FontAttributes="Bold"
+                           WidthRequest="120"
+                           HorizontalTextAlignment="End"></Label>
+                    <Label x:Name="LblStepperOldVal"></Label>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

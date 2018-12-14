@@ -128,5 +128,16 @@ namespace XamarinApp5_ControleXF
             };
             IsPresented = false;
         }
+
+        private void GoToSliderOrStepper(object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new SliderOrStepper())
+            {
+                BarBackgroundColor = Color.FromHex("#0D1F2D"),
+                BarTextColor = Color.White
+            };
+            IsPresented = false;
+        }
+        
     }
 }
