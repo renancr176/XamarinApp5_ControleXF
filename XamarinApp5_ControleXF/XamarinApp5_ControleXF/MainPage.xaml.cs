@@ -118,5 +118,15 @@ namespace XamarinApp5_ControleXF
             };
             IsPresented = false;
         }
+
+        private void GoToSearchBar(object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new SearchBarPage())
+            {
+                BarBackgroundColor = Color.FromHex("#0D1F2D"),
+                BarTextColor = Color.White
+            };
+            IsPresented = false;
+        }
     }
 }

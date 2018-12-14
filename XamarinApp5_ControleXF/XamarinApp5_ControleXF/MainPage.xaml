@@ -69,6 +69,11 @@
                                 BackgroundColor="Transparent"
                                 BorderColor="Transparent"
                                 Clicked="GoToPicker"></Button>
+                        <Button Text="Search Bar"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="Transparent"
+                                Clicked="GoToSearchBar"></Button>
                     </StackLayout>
                 </ScrollView>
             </StackLayout>

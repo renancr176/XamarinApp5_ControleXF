@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp5_ControleXF.Controles.SearchBarPage"
+             Title="Search Bar">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand"
+                     Padding="10">
+            <SearchBar TextChanged="SearchBar_OnTextChanged"
+                       CancelButtonColor="Red"
+                       Placeholder="Filtrar diretamente"
+                       PlaceholderColor="SlateBlue"></SearchBar>
+
+            <SearchBar SearchButtonPressed="SearchBar_OnSearchButtonPressed"
+                       CancelButtonColor="Red"
+                       Placeholder="Filtrar após clicar no botão"
+                       PlaceholderColor="SlateBlue"></SearchBar>
+
+            <StackLayout x:Name="ListResult"
+                         Padding="30,0,0,0"></StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
