@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp5_ControleXF.Controles.EntryOrEditorPage"
+             Title="Entry ou Editor?">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="CenterAndExpand" >
+                <Label Text="Entry"
+                       FontSize="Medium"
+                       FontAttributes="Italic,Bold"
+                       HorizontalOptions="CenterAndExpand" />
+                <!-- Entry é utilizado para poucos caracters -->
+                <Entry Text="Hello word!"
+                       MaxLength="20"
+                       TextColor="White"
+                       BackgroundColor="SlateBlue"
+                       
+                       WidthRequest="200"
+                       HorizontalOptions="CenterAndExpand"></Entry>
+
+                <Entry Placeholder="Place Holder"
+                       MaxLength="20"
+                       PlaceholderColor="#0D1F2D"
+                       
+                       WidthRequest="200"
+                       HorizontalOptions="CenterAndExpand"></Entry>
+
+                <StackLayout HorizontalOptions="CenterAndExpand"
+                             Orientation="Horizontal">
+                    <Label Text="Keyboard - Text"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="End"
+                           WidthRequest="100"></Label>
+                    <Entry Keyboard="Text"
+                           MaxLength="20"
+                           
+                           WidthRequest="100"></Entry>
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="CenterAndExpand"
+                             Orientation="Horizontal">
+                    <Label Text="Keyboard - Email"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="End"
+                           WidthRequest="100"></Label>
+                    <Entry Keyboard="Email" 
+                           MaxLength="20"
+                           
+                           WidthRequest="100"></Entry>
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="CenterAndExpand"
+                             Orientation="Horizontal">
+                    <Label Text="Keyboard - Telephone"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="End"
+                           WidthRequest="100"></Label>
+                    <Entry Keyboard="Telephone" 
+                       
+                           WidthRequest="100"></Entry>
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="CenterAndExpand"
+                             Orientation="Horizontal">
+                    <Label Text="IsPassword"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="End"
+                           WidthRequest="100"></Label>
+                    <Entry IsPassword="True"
+                           MaxLength="20"
+                       
+                           WidthRequest="100"></Entry>
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="CenterAndExpand"
+                             Orientation="Horizontal">
+                    <Label Text="Text Changed"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="End"
+                           WidthRequest="100"></Label>
+                    <Entry TextChanged="EntryOnTextChanged" 
+                           MaxLength="20"
+                       
+                           WidthRequest="100"></Entry>
+                </StackLayout>
+                <StackLayout HorizontalOptions="CenterAndExpand"
+                             Orientation="Horizontal">
+                    <Label Text="New Text Val"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="End"
+                           WidthRequest="100"></Label>
+                    <Label x:Name="LblEntryOnTextChangedNewVal"
+                           WidthRequest="100"></Label>
+                </StackLayout>
+                <StackLayout HorizontalOptions="CenterAndExpand"
+                             Orientation="Horizontal">
+                    <Label Text="Old Text Val"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="End"
+                           WidthRequest="100"></Label>
+                    <Label x:Name="LblEntryOnTextChangedOldVal"
+                           WidthRequest="100"></Label>
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="CenterAndExpand"
+                             Orientation="Horizontal">
+                    <Label Text="Completed"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="End"
+                           WidthRequest="100"></Label>
+
+                    <!-- Poderia ser feito via o atributo "Completed", porem fiz via delegate
+                    <Entry Completed="EntryOnCompleted"
+                       
+                           WidthRequest="100"></Entry>
+                    -->
+
+                    <Entry x:Name="EntryCompleted"
+                           MaxLength="20"
+                       
+                           WidthRequest="100"></Entry>
+                </StackLayout>
+                <StackLayout HorizontalOptions="CenterAndExpand"
+                             Orientation="Horizontal">
+                    <Label Text="Completed Text Val"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="End"
+                           WidthRequest="100"></Label>
+                    <Label x:Name="LblEntryOnCompleted"
+                           WidthRequest="100"></Label>
+                </StackLayout>
+
+                <Label Text="Editor"
+                       FontSize="Medium"
+                       FontAttributes="Italic,Bold"
+                       HorizontalOptions="CenterAndExpand" />
+
+                <!-- Editor é utilizado para muitos caracteres -->
+
+                <Editor TextChanged="EditorOnTextChanged"
+                        WidthRequest="200"
+                        HeightRequest="200"
+                        HorizontalOptions="CenterAndExpand"></Editor>
+                <Label x:Name="LblQtdCaracteres"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

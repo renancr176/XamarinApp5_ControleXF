@@ -48,5 +48,46 @@ namespace XamarinApp5_ControleXF
             };
             IsPresented = false;
         }
+
+        private void GoToBoxView(object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new BoxViewPage())
+            {
+                BarBackgroundColor = Color.FromHex("#0D1F2D"),
+                BarTextColor = Color.White
+            };
+            IsPresented = false;
+        }
+
+        private void GoToLabel(object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new LabelPage())
+            {
+                BarBackgroundColor = Color.FromHex("#0D1F2D"),
+                BarTextColor = Color.White
+            };
+            IsPresented = false;
+        }
+
+        private void GoToButton(object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new ButtonPage())
+            {
+                BarBackgroundColor = Color.FromHex("#0D1F2D"),
+                BarTextColor = Color.White
+            };
+            IsPresented = false;
+        }
+
+        private void GoToEntryOrEditor(object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new EntryOrEditorPage())
+            {
+                BarBackgroundColor = Color.FromHex("#0D1F2D"),
+                BarTextColor = Color.White
+            };
+            IsPresented = false;
+        }
+        
     }
 }

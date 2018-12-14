@@ -34,6 +34,26 @@
                                 BackgroundColor="Transparent"
                                 BorderColor="Transparent"
                                 Clicked="GoToProgressBar"></Button>
+                        <Button Text="Box View"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="Transparent"
+                                Clicked="GoToBoxView"></Button>
+                        <Button Text="Label"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="Transparent"
+                                Clicked="GoToLabel"></Button>
+                        <Button Text="Button"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="Transparent"
+                                Clicked="GoToButton"></Button>
+                        <Button Text="Entry ou Editor?"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="Transparent"
+                                Clicked="GoToEntryOrEditor"></Button>
                     </StackLayout>
                 </ScrollView>
             </StackLayout>

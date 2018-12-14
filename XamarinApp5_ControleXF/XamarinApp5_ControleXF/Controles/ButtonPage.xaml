@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp5_ControleXF.Controles.ButtonPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Button Text="Botão 1 Default"
+                    
+                    HorizontalOptions="CenterAndExpand"></Button>
+            <Button Text="Botão 2 Custom"
+                    TextColor="White"
+                    BorderColor="Blue"
+                    BorderRadius="10"
+                    BorderWidth="3"
+                    BackgroundColor="SlateBlue"
+
+                    HorizontalOptions="CenterAndExpand"></Button>
+            <Button Image="btn_facebook.png"
+                    BorderColor="Transparent"
+                    BackgroundColor="Transparent"
+
+                    HorizontalOptions="CenterAndExpand"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
