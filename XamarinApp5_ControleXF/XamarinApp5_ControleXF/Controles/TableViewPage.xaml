@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp5_ControleXF.Controles.TableViewPage"
+             Title="Table View">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <TableView Intent="Settings">
+                <TableRoot>
+                    <TableSection Title="Backup">
+                        <SwitchCell Text="Backup de Imagens" On="False"></SwitchCell>
+                        <SwitchCell Text="Backup de Texto" On="False"></SwitchCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Frenquência de backup semanal"></Label>
+                                <Slider Minimum="0" 
+                                        Maximum="7"
+                                        ThumbColor="SlateBlue"
+                                        MaximumTrackColor="Aqua"
+                                        MinimumTrackColor="#0d1f2d"
+                                        HorizontalOptions="FillAndExpand"
+                                        ValueChanged="Slider_OnValueChanged"></Slider>
+                                <Label x:Name="LblQtdDiasSemana"
+                                       Text="0"></Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Segurança">
+                        <SwitchCell Text="Senhas criptografadas" On="True"></SwitchCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

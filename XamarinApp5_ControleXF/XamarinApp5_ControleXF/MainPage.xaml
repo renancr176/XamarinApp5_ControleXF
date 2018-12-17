@@ -94,6 +94,11 @@
                                 BackgroundColor="Transparent"
                                 BorderColor="Transparent"
                                 Clicked="GoToListView"></Button>
+                        <Button Text="Table View"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="Transparent"
+                                Clicked="GoToTableView"></Button>
                     </StackLayout>
                 </ScrollView>
             </StackLayout>
