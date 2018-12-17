@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:XamarinApp5_ControleXF.Model"
+             xmlns:system="clr-namespace:System;assembly=netstandard"
+             x:Class="XamarinApp5_ControleXF.Controles.ListViewPage"
+             Title="List View">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="List View Estático"
+                       HorizontalOptions="FillAndExpand"
+                       FontSize="Medium"
+                       BackgroundColor="#0D1F2D"
+                       TextColor="White"
+                       Margin="0,10,0,0"></Label>
+                <ListView>
+                    <ListView.ItemsSource>
+                        <x:Array Type="{x:Type model:PessoaModel}">
+                            <model:PessoaModel Nome="João Rodrigues" Idade="18"></model:PessoaModel>
+                            <model:PessoaModel Nome="Maria Rodrigues" Idade="21"></model:PessoaModel>
+                            <model:PessoaModel Nome="Felipe Rodrigues" Idade="24"></model:PessoaModel>
+                            <model:PessoaModel Nome="José Rodrigues" Idade="30"></model:PessoaModel>
+                            <model:PessoaModel Nome="Mariana Rodrigues" Idade="31"></model:PessoaModel>
+                        </x:Array>
+                    </ListView.ItemsSource>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Nome}"></Label>
+                                    <Label Text=" - "></Label>
+                                    <Label Text="{Binding Idade}"></Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Label Text="List View Dinâmico"
+                       HorizontalOptions="FillAndExpand"
+                       FontSize="Medium"
+                       BackgroundColor="#0D1F2D"
+                       TextColor="White"></Label>
+                <ListView x:Name="LvDinamico">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Nome}"></Label>
+                                    <Label Text=" - "></Label>
+                                    <Label Text="{Binding Idade}"></Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

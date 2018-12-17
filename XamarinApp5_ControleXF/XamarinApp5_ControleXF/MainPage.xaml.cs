@@ -158,6 +158,16 @@ namespace XamarinApp5_ControleXF
             };
             IsPresented = false;
         }
+
+        private void GoToListView(object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new ListViewPage())
+            {
+                BarBackgroundColor = Color.FromHex("#0D1F2D"),
+                BarTextColor = Color.White
+            };
+            IsPresented = false;
+        }
         
     }
 }
