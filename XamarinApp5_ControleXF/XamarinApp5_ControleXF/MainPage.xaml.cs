@@ -148,6 +148,16 @@ namespace XamarinApp5_ControleXF
             };
             IsPresented = false;
         }
+
+        private void GoToImage(object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new ImagePage())
+            {
+                BarBackgroundColor = Color.FromHex("#0D1F2D"),
+                BarTextColor = Color.White
+            };
+            IsPresented = false;
+        }
         
     }
 }

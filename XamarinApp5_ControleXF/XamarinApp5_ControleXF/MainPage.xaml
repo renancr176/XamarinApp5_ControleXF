@@ -84,6 +84,11 @@
                                 BackgroundColor="Transparent"
                                 BorderColor="Transparent"
                                 Clicked="GoToSwitch"></Button>
+                        <Button Text="Image"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="Transparent"
+                                Clicked="GoToImage"></Button>
                     </StackLayout>
                 </ScrollView>
             </StackLayout>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp5_ControleXF.Controles.ImagePage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout x:Name="Container" 
+                         VerticalOptions="CenterAndExpand" 
+                         Padding="10">
+                <!--
+                <Image Source="Resource, Local, Internet"></Image>
+                -->
+                <!-- O atributo IsOpaque é somente para imagens que não tenha a camada alpha "Transparencia",
+                faz com que a imagem seja carregada mais rápido -->
+
+                <Image Source="https://upload.wikimedia.org/wikipedia/commons/8/82/Facebook_icon.jpg"
+                       IsOpaque="True"
+                       Aspect="Fill"></Image>
+
+                <Image Source="https://upload.wikimedia.org/wikipedia/commons/8/82/Facebook_icon.jpg"
+                       IsOpaque="True"
+                       Aspect="AspectFill"></Image>
+
+                <Image Source="https://upload.wikimedia.org/wikipedia/commons/8/82/Facebook_icon.jpg"
+                       IsOpaque="True"
+                       Aspect="AspectFit"></Image>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
