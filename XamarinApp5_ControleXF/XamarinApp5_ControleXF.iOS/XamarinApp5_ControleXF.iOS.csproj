@@ -163,4 +163,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\btn_facebook.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\forward_arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\back_arrow.png" />
+  </ItemGroup>
 </Project>

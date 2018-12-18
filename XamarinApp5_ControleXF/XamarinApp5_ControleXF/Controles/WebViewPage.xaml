@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp5_ControleXF.Controles.WebViewPage"
+             Title="Web View">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="Navigation"
+                       HorizontalOptions="FillAndExpand"></Entry>
+                <Button Text="Go" 
+                        Clicked="GoToURL"
+                        HorizontalOptions="Fill"></Button>
+                <Button x:Name="BtnGoBack" 
+                        Clicked="GoBack"
+                        HorizontalOptions="Fill"></Button>
+                <Button x:Name="BtnGoForward" 
+                        Clicked="GoForward"
+                        HorizontalOptions="Fill"></Button>
+            </StackLayout>
+            <WebView x:Name="Browser" 
+                     Navigating="ActionCarregando"
+                     Navigated="ActionCarregado"
+                     
+                     HorizontalOptions="FillAndExpand"
+                     VerticalOptions="FillAndExpand">
+            </WebView>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="FillAndExpand"
+                         HeightRequest="20">
+                <Label x:Name="LblStatus" 
+                       HorizontalOptions="Fill"></Label>
+                <ActivityIndicator x:Name="AILoagindPage"
+                                   Color="Red" 
+                                   IsRunning="True"
+                                   HorizontalOptions="FillAndExpand"></ActivityIndicator>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -99,6 +99,11 @@
                                 BackgroundColor="Transparent"
                                 BorderColor="Transparent"
                                 Clicked="GoToTableView"></Button>
+                        <Button Text="Web View"
+                                TextColor="White"
+                                BackgroundColor="Transparent"
+                                BorderColor="Transparent"
+                                Clicked="GoToWebView"></Button>
                     </StackLayout>
                 </ScrollView>
             </StackLayout>

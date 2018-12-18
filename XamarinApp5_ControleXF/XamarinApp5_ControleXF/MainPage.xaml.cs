@@ -178,6 +178,16 @@ namespace XamarinApp5_ControleXF
             };
             IsPresented = false;
         }
+
+        private void GoToWebView(object sender, EventArgs args)
+        {
+            Detail = new NavigationPage(new WebViewPage())
+            {
+                BarBackgroundColor = Color.FromHex("#0D1F2D"),
+                BarTextColor = Color.White
+            };
+            IsPresented = false;
+        }
         
     }
 }
